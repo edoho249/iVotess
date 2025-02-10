@@ -1,0 +1,395 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Global Responsive Styles */
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+
+/* header */
+
+@media (max-width:1000px) {
+    body{
+      overflow-x: hidden;
+    }
+  }
+  
+  .abovehead{
+    display: flex;
+    background-color: rgb(116, 10, 10);
+    height: 80px;
+    top:0;
+      left: 0;
+      right: 0;
+      align-items: right;
+      padding-left: 80%;
+      min-height: 40px;
+      z-index: 1000;
+      position: fixed;
+  }
+  
+  .abovehead img{
+    height: 30px;
+    margin-top: 23px;
+  }
+  
+  .abovehead p{
+    text-align: center;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+   color: white;
+  }
+  
+  
+  nav{
+      display: flex;
+      background-color: transparent;
+      height: 80px;
+      width: 100%;
+      z-index: 1000;
+      background-color:transparent;
+      align-items: center;
+      padding: 10px 20px;
+      min-height: 40px;
+      gap:120px;
+      position: fixed;
+      /* box-shadow: #444; */
+    }
+    
+    nav ul {
+      list-style-type: none;
+      color: white;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    nav li {
+      list-style: none;
+      color: white;
+      padding:10px;
+      border-radius: 10px;
+      font-family: monospace;
+      transition: 0.7s ease;
+    }
+    
+    nav a {
+      text-decoration: none;
+      color: white;
+      transition: color 0.3s;
+      font-size: 20px;
+      font-family: monospace;
+    }
+    
+    .navbar {
+      position: relative;
+      align-content: center;
+      padding: 20px;
+      column-gap: 40px;
+    }
+    
+    .navbar a:hover {
+      color: red;
+    }
+    
+    @media (max-width:1000px) {
+      .nav-links {
+          display: none;
+      }
+      .nav-item{
+          display: none;
+      }
+  
+      nav{
+        position: relative;
+        justify-content: center;
+      }
+  
+      
+  
+  .abovehead{
+    position: relative;
+  padding: 0;
+  justify-content: center;
+  height: 50px;
+  }
+  
+  .abovehead img{
+    height: 25px;
+    margin-top: 12px;
+  }
+  
+    }
+  
+  
+    @media (max-width:360px) {
+     
+  
+    }
+    
+    @media (max-width:1000px) { 
+      
+      .hamburger{
+          background-color: black;
+          margin-right: 100px;
+      }
+  
+      
+      
+    }
+    
+    @media (min-width:1200px) {
+      .hamburger {
+          display: none;
+      }
+      
+    }
+    
+    
+    .sidebar {
+      position: fixed;
+      top: 0;
+      display: none;
+     right: 0;
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      background-color: black;
+      flex-direction: column;
+      z-index: 101;
+      font-size: 50px;
+      align-items: left;
+      padding: 10px;
+      justify-content: flex-start;
+      }
+      
+      .sidebar a:hover {
+          color: rgb(99, 10, 10);
+      }
+  
+      .sidebar a{
+          color: white;
+      }
+      
+      .img-logo{
+        display: flex;
+        padding: 50px;
+        height:250px;
+        cursor: pointer;
+      }
+    
+      
+      .sidebarbtn {
+          margin-top: 20px;
+          width: 20px;
+      }
+  
+      .nav-item {
+          position: relative;
+          cursor: pointer;
+      }
+      
+      .nav-item:hover {
+          color: #007bff; 
+      }
+      
+      .nav-item::after {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: 10px; 
+          width: 100%; 
+          height: 2px; 
+          background-color: red; 
+          transform: translateX(-50%); 
+      }
+  
+  
+      /* header ends */
+  
+
+/* Main */
+
+
+@media (max-width:1000px){
+
+main{
+    display: flex;
+    flex-direction: column
+}
+
+}
+    
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    background-color: rgb(8, 82, 194);
+    flex: 1;
+    padding: 60px;
+    color: white;
+    align-items: center;
+    align-content: center;
+}
+
+.left h1 {
+    font-size: 100px
+}
+
+.left p {
+    font-size: 30px
+}
+
+.right {
+    flex: 1;
+    background-image: url('img/portrait-flight-attendant-with-plane-tickets-passport.jpg');
+    background-size: cover;
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 40px;
+}
+
+.head h1, .head h2 {
+    text-align: center;
+    color: white;
+}
+
+.contain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lefts, .rights {
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    background: blue;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(to left, blue, black);
+}
+
+/* Footer */
+.last, .lasted {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.legal h1, .safety h1, .privacy h1, .cookies h1, .about-ads h1, .accessibility h1 {
+    color: white;
+    font-size: 15px;
+}
+
+.logo img{
+    height: 200px;
+}
+
+.socials img{
+    height: 50px;
+    border-radius: 50px;
+}
+
+.socials{
+    gap: 20px;
+    display: flex; 
+    align-content: center;
+    align-items: center;
+}
+
+
+
+/* Responsive Media Queries */
+@media (max-width: 1000px) {
+
+
+  
+
+    main {
+        flex-direction: column;
+        height: auto;
+        display: flex;
+    }
+
+    .left, .right {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .left h1 {
+        font-size: 40px;
+    }
+
+    .left p {
+        font-size: 18px;
+    }
+
+    .contain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
+}
+
+@media (max-width: 360px) {
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .left p {
+        font-size: 16px;
+    }
+
+    .abovehead img {
+        height: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

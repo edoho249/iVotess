@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Dashboard - Voting Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/iVOTE-removebg-preview.png" alt="Platform Logo">
+            </div>
+            <nav class="sidebar-menu">
+                <ul>
+                    <li class="active">
+                        <a href=""><i class="ri-dashboard-line"></i> Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-vote-line"></i> Set Voting Rues</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-vote-line"></i> Voting links</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-bar-chart-line"></i> Results</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-user-line"></i> Users</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="ri-settings-3-line"></i> Settings</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <a href="#" class="logout"><i class="ri-logout-box-line"></i> Logout</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div class="header-left">
+                    <h1>Dashboard Overview</h1>
+                    <p>Welcome, Admin! Here's an overview of the voting platform.</p>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <button><i class="ri-search-line"></i></button>
+                    </div>
+                    <div class="notifications">
+                        <i class="ri-notification-3-line"></i>
+                        <span class="badge">2</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="stats-grid">
+                <div class="stat-card total-votes">
+                    <div class="card-icon"><i class="ri-vote-line"></i></div>
+                    <div class="card-content">
+                        <h3>Total Votes</h3>
+                        <p class="stat-number">1,234</p>
+                        <p class="stat-change positive">+5.2% <span>this week</span></p>
+                    </div>
+                </div>
+                <div class="stat-card active-users">
+                    <div class="card-icon"><i class="ri-user-line"></i></div>
+                    <div class="card-content">
+                        <h3>Active Users</h3>
+                        <p class="stat-number">567</p>
+                        <p class="stat-change neutral">Stable</p>
+                    </div>
+                </div>
+                <div class="stat-card upcoming-elections">
+                    <div class="card-icon"><i class="ri-calendar-event-line"></i></div>
+                    <div class="card-content">
+                        <h3>Upcoming Elections</h3>
+                        <p class="stat-number">3</p>
+                        <p class="stat-change">Next in 12 days</p>
+                    </div>
+                </div>
+                <div class="stat-card reported-issues">
+                    <div class="card-icon"><i class="ri-alert-line"></i></div>
+                    <div class="card-content">
+                        <h3>Reported Issues</h3>
+                        <p class="stat-number">2</p>
+                        <p class="stat-change negative">Needs attention</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-activity">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+                <table class="activity-table">
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>City Mayor Election</td>
+                            <td>2024-03-15</td>
+                            <td><span class="status-badge active">Active</span></td>
+                            <td><button class="action-btn">Manage</button></td>
+                        </tr>
+                        <tr>
+                            <td>School Board Vote</td>
+                            <td>2024-04-02</td>
+                            <td><span class="status-badge pending">Pending</span></td>
+                            <td><button class="action-btn">Review</button></td>
+                        </tr>
+                        <tr>
+                            <td>Corporate Board Election</td>
+                            <td>2024-02-28</td>
+                            <td><span class="status-badge completed">Completed</span></td>
+                            <td><button class="action-btn">View Results</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
